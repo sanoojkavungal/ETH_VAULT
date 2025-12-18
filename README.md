@@ -4,6 +4,8 @@ ETH Vault is a decentralized application (dApp) that allows users to deposit ETH
 
 This project demonstrates complete end-to-end Web3 development, including smart contract interaction, wallet connection, and frontend state updates based on blockchain data.
 
+https://eth-vault-eta.vercel.app/
+
 ---
 
 ## 🚀 Features
@@ -55,7 +57,7 @@ Sepolia test ETH (from a faucet)
 Live Server / VS Code or any local server
 
 2️⃣ Clone the Repository
-git clone https://github.com/your-username/eth-vault.git
+git clone https://github.com/sanoojkavungal/ETH_VAULT
 cd eth-vault
 
 3️⃣ Run the App
