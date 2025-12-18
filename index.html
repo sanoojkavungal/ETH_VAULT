@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ETH Vault</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+  <div class="animated-bg"></div>
+
+  <div class="container">
+    <h1>ETH Vault</h1>
+    <p class="description">
+      Deposit your ETH securely for a chosen lock period. Withdraw after the lock ends. Test it on Sepolia network.
+    </p>
+
+    <button id="connectWallet">Connect Wallet</button>
+
+<p id="walletAddress">Not connected</p>
+
+
+    <div id="vaultUI" class="vault-ui">
+      <div class="card">
+        <h3>Deposit ETH</h3>
+        <input type="text" id="depositAmount" placeholder="Amount in ETH">
+        <input type="number" id="lockSeconds" placeholder="Lock seconds">
+        <button id="depositBtn">Deposit</button>
+      </div>
+
+      <div class="card">
+        <h3>Withdraw ETH</h3>
+        <button id="withdrawBtn">Withdraw</button>
+      </div>
+
+      <div class="card" id="depositInfo">
+        <h3>Your Deposit</h3>
+        <p>Amount: <span id="amount">0</span> ETH</p>
+        <p>Unlock Time: <span id="unlockTime">-</span></p>
+        <p>Withdrawn: <span id="withdrawn">No</span></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/ethers@6.14.0/dist/ethers.umd.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

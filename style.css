@@ -1,0 +1,102 @@
+/* Import Poppins font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Animated gradient background */
+.animated-bg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(270deg, #1a2a6c, #b21f1f, #fdbb2d);
+  background-size: 600% 600%;
+  animation: gradientBG 15s ease infinite;
+  z-index: -1;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Container */
+.container {
+  position: relative;
+  text-align: center;
+  padding: 50px 20px;
+  max-width: 450px;
+  width: 90%;
+}
+
+/* Headings & description */
+h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+.description {
+  font-size: 0.95rem;
+  color: #ddd;
+  margin-bottom: 2rem;
+}
+
+/* Buttons */
+button {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 10px;
+  background: #00ffcc;
+  color: #111;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #00e6b8;
+  transform: scale(1.05);
+}
+
+/* Glass-card style */
+.vault-ui .card {
+  background: rgba(0,0,0,0.4);
+  backdrop-filter: blur(10px);
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.vault-ui .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 30px rgba(0,255,204,0.6);
+}
+
+/* Inputs */
+input {
+  width: 80%;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  border-radius: 8px;
+  border: none;
+  text-align: center;
+}
+
+/* Vault UI display */
+#vaultUI {
+  display: none; /* show after wallet connection */
+}
